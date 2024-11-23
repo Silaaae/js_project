@@ -1,0 +1,287 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #101820;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1C1C1C;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00A4CC;
+}
+.logo img {
+    height: 60px;
+    margin-right: 15px;
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li {
+    margin-left: 20px;
+}
+.nav-bar ul li a {
+    color: #00A4CC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.nav-bar ul li a:hover {
+    background-color: #00A4CC;
+    color: #101820;
+    border-radius: 5px;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #00A4CC;
+}
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none;
+        flex-direction: column;
+        background: #1C1C1C;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+    .nav-bar ul.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #001F3F, #0074D9);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #00A4CC;
+    color: #101820;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.hero .btn:hover {
+    background-color: #0074D9;
+    color: white;
+}
+
+/* Features Section */
+.features {
+    padding: 40px;
+    text-align: center;
+}
+.features .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00A4CC;
+}
+.feature-card {
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+}
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.feature-card h3 {
+    margin: 15px 0;
+    color: #00A4CC;
+}
+.feature-card p {
+    padding: 0 15px 15px;
+}
+
+/* Services Section */
+.home-content {
+    background: #0D1B2A;
+    padding: 40px;
+    text-align: center;
+}
+.home-content .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00A4CC;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.service {
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.service h3 {
+    margin-bottom: 10px;
+    color: #00A4CC;
+}
+
+/* Call-to-Action */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: #00A4CC;
+    color: white;
+}
+.cta form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.cta input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+.cta button {
+    padding: 10px 20px;
+    background: #101820;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta button:hover {
+    background-color: #0D1B2A;
+}
+
+/* Footer */
+footer {
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Analysis Table */
+.analysis-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1C1C1C;
+    color: white;
+    border: 1px solid #00A4CC;
+}
+.analysis-table th, .analysis-table td {
+    padding: 15px;
+    text-align: left;
+}
+.analysis-table th {
+    background-color: #00A4CC;
+}
+.analysis-table tr:nth-child(even) {
+    background-color: #101820;
+}
+
+/* Doctors Grid */
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.doctor-card {
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.doctor-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.doctor-card h3 {
+    margin-top: 10px;
+    color: #00A4CC;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #00A4CC;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #101820;
+    color: white;
+}
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00A4CC;
+    border: none;
+    border-radius: 5px;
+    color: #101820;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #0074D9;
+}

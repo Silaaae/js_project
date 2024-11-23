@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Portal - Patient Home</title>
+    <link rel="stylesheet" href="patient_style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Hospital Logo">
+            <h1>Our Hospital</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="patient_index.html">Home</a></li>
+                <li><a href="patient_doctors.html">Doctors</a></li>
+                <li><a href="patient_contact.html">Services</a></li>
+                <li><a href="patient_analysis.html">My Analyses</a></li>
+                <li><a href="patient_contact.html">Contact Assistant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Our Hospital Portal</h2>
+            <p>Your health is our priority. Access your medical records, connect with doctors, and manage appointments seamlessly.</p>
+            <a href="#" class="btn">Get Started</a>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="feature-card">
+                <img src="images/healthcare.jpg" alt="Healthcare Services">
+                <h3>Comprehensive Care</h3>
+                <p>We provide personalized care for every patient, ensuring the best medical outcomes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/expert-doctors.jpg" alt="Expert Doctors">
+                <h3>Expert Physicians</h3>
+                <p>Our team consists of top specialists with years of experience in various fields.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/teckno.jpeg" alt="Modern Technology">
+                <h3>Advanced Technology</h3>
+                <p>We use state-of-the-art medical equipment and technology for diagnostics and treatments.</p>
+            </div>
+        </section>
+
+        <section class="home-content">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>24/7 Emergency Care</h3>
+                    <p>We are available round the clock to handle medical emergencies with prompt action.</p>
+                </div>
+                <div class="service">
+                    <h3>Specialized Clinics</h3>
+                    <p>From cardiology to orthopedics, our clinics provide focused care tailored to your needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Online Consultations</h3>
+                    <p>Connect with our doctors from the comfort of your home through our secure portal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest updates and healthcare tips.</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

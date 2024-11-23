@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Analysis Results</title>
+    <link rel="stylesheet" href="patient_style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Hospital Logo">
+            <h1>Our Hospital</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="patient_index.html">Home</a></li>
+                <li><a href="patient_doctors.html">Doctors</a></li>
+                <li><a href="patient_contact.html">Services</a></li>
+                <li><a href="patient_analysis.html">My Analyses</a></li>
+                <li><a href="patient_contact.html">Contact Assistant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 class="section-title">My Analysis Results</h2>
+        <div class="analysis-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Test</th>
+                        <th>Result</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>October 15, 2024</td>
+                        <td>Blood Test</td>
+                        <td>Normal</td>
+                        <td><button class="btn">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>November 20, 2024</td>
+                        <td>X-Ray</td>
+                        <td>Normal</td>
+                        <td><button class="btn">View Details</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
